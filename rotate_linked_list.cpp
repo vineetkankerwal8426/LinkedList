@@ -19,7 +19,7 @@ ListNode* rotateRight(ListNode* head, int k) {
         for(int i =0;i<l-(k%l)-1;i++){   // number of rotations will be k%length;
             newLast = newLast->next;
         }
-        head = newLast->next ;    
+        head = newLast->next ;
         newLast->next = nullptr;
         return head;
     }
